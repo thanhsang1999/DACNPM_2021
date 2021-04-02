@@ -1,0 +1,7 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+   & .MuiPaginationItem-textPrimary.Mui-selected{
+    background-color: #f39c12;
+   }
+}
