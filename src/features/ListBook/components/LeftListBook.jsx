@@ -7,51 +7,32 @@ function LeftListBook(props) {
   return (
     <div className="root">
       <div className="filter-widget">
-        <h4 className="fw-title">Categories</h4>
+        <h4 className="fw-title">Danh mục</h4>
         <ul className="filter-catagories">
           <li>
-            <a href="#">Men</a>
+            <a href="#">Lãng mạn</a>
           </li>
           <li>
-            <a href="#">Women</a>
+            <a href="#">Kinh tế</a>
           </li>
           <li>
-            <a href="#">Kids</a>
+            <a href="#">Phát triển bản thân</a>
           </li>
         </ul>
       </div>
       <div className="filter-widget">
-        <h4 className="fw-title">Brand</h4>
-        <div className="fw-brand-check">
-          <div className="bc-item">
-            <label for="bc-calvin">
-              Calvin Klein
-              <input type="checkbox" id="bc-calvin" />
-              <span className="checkmark"></span>
-            </label>
-          </div>
-          <div className="bc-item">
-            <label for="bc-diesel">
-              Diesel
-              <input type="checkbox" id="bc-diesel" />
-              <span className="checkmark"></span>
-            </label>
-          </div>
-          <div className="bc-item">
-            <label for="bc-polo">
-              Polo
-              <input type="checkbox" id="bc-polo" />
-              <span className="checkmark"></span>
-            </label>
-          </div>
-          <div className="bc-item">
-            <label for="bc-tommy">
-              Tommy Hilfiger
-              <input type="checkbox" id="bc-tommy" />
-              <span className="checkmark"></span>
-            </label>
-          </div>
-        </div>
+        <h4 className="fw-title">Tác giả</h4>
+        <ul className="filter-catagories">
+          <li>
+            <a href="#">Lãng mạn</a>
+          </li>
+          <li>
+            <a href="#">Kinh tế</a>
+          </li>
+          <li>
+            <a href="#">Phát triển bản thân</a>
+          </li>
+        </ul>
       </div>
       {/* <div className="filter-widget">
         <h4 className="fw-title">Price</h4>
@@ -123,7 +104,7 @@ function LeftListBook(props) {
           </div>
         </div>
       </div> */}
-      <div className="filter-widget">
+      {/* <div className="filter-widget">
         <h4 className="fw-title">Size</h4>
         <div className="fw-size-choose">
           <div className="sc-item">
@@ -155,7 +136,7 @@ function LeftListBook(props) {
           <a href="#">Men's hats</a>
           <a href="#">Backpack</a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

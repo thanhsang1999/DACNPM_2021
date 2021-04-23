@@ -9,7 +9,7 @@ function CustomCard(props) {
     <div className="col-lg-4 col-sm-6">
       <div className="product-item">
         <div className="pi-pic">
-          <img src="./assets/img/products/product-1.jpg" alt="" />
+          <img src="./assets/img/lists/book.jpg" alt="" />
           <div className="icon">
             <i className="icon_heart_alt"></i>
           </div>

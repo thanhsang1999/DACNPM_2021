@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./styles.scss";
+import { Link } from "react-router-dom";
 
 CustomHeader.propTypes = {};
 
@@ -10,20 +11,20 @@ function CustomHeader(props) {
       <div className="header-top">
         <div className="container">
           <div className="ht-left">
-            <div className="mail-service">
+            {/* <div className="mail-service">
               <i className=" fa fa-envelope"></i>
               hello.colorlib@gmail.com
             </div>
             <div className="phone-service">
               <i className=" fa fa-phone"></i>
               +65 11.188.888
-            </div>
+            </div> */}
           </div>
           <div className="ht-right">
-            <a href="#" className="login-panel">
+            <Link className="login-panel" to="/login">
               <i className="fa fa-user"></i>Login
-            </a>
-            <div className="lan-selector">
+            </Link>
+            <div className="lan-selector" style={{ display: "none" }}>
               <select
                 className="language_drop"
                 name="countries"
@@ -47,20 +48,6 @@ function CustomHeader(props) {
                   German{" "}
                 </option>
               </select>
-            </div>
-            <div className="top-social">
-              <a href="#">
-                <i className="ti-facebook"></i>
-              </a>
-              <a href="#">
-                <i className="ti-twitter-alt"></i>
-              </a>
-              <a href="#">
-                <i className="ti-linkedin"></i>
-              </a>
-              <a href="#">
-                <i className="ti-pinterest"></i>
-              </a>
             </div>
           </div>
         </div>
@@ -167,31 +154,13 @@ function CustomHeader(props) {
           <div className="nav-depart">
             <div className="depart-btn">
               <i className="ti-menu"></i>
-              <span>All departments</span>
+              <span>Thể loại</span>
               <ul className="depart-hover">
                 <li className="active">
-                  <a href="#">Women’s Clothing</a>
+                  <a href="#">Ngôn tình</a>
                 </li>
                 <li>
-                  <a href="#">Men’s Clothing</a>
-                </li>
-                <li>
-                  <a href="#">Underwear</a>
-                </li>
-                <li>
-                  <a href="#">Kid's Clothing</a>
-                </li>
-                <li>
-                  <a href="#">Brand Fashion</a>
-                </li>
-                <li>
-                  <a href="#">Accessories/Shoes</a>
-                </li>
-                <li>
-                  <a href="#">Luxury Brands</a>
-                </li>
-                <li>
-                  <a href="#">Brand Outdoor Apparel</a>
+                  <a href="#">Kinh tế</a>
                 </li>
               </ul>
             </div>
@@ -199,14 +168,17 @@ function CustomHeader(props) {
           <nav className="nav-menu mobile-menu">
             <ul>
               <li className="active">
-                <a href="./index.html">Home</a>
+                <a href="./index.html">Trang chủ</a>
               </li>
               <li>
-                <a href="./shop.html">Shop</a>
+                <Link to="list">Danh sách</Link>
+              </li>
+              <li>
+                <Link to="/upload">Upload Book</Link>
               </li>
 
               <li>
-                <a href="./contact.html">Contact</a>
+                <a href="./contact.html">Liên hệ</a>
               </li>
             </ul>
           </nav>

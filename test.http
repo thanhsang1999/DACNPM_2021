@@ -1,0 +1,8 @@
+POST http://localhost:80/login
+Content-Type: multipart/form-data
+
+{
+    "username":"user",
+    "password":"user"
+}
+###

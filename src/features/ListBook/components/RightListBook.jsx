@@ -9,7 +9,7 @@ function RightListBook(props) {
   return (
     <div className="root">
       <div className="product-show-option">
-        <div className="row">
+        <div className="row" style={{ display: "none" }}>
           <div className="col-lg-7 col-md-7">
             <div className="select-option">
               <select className="sorting">

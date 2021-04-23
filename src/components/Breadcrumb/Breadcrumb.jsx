@@ -13,7 +13,7 @@ function Breadcrumb(props) {
               <a href="#">
                 <i className="fa fa-home"></i> Home
               </a>
-              <span>Shop</span>
+              <span>Danh Sách</span>
             </div>
           </div>
         </div>
